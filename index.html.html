@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nexo - Chaîne YouTube</title>
+<meta name="description" content="Chaîne YouTube Nexo : gaming, tutoriels et vidéos fun. Rejoins la communauté et découvre du contenu inédit !">
+
+<style>
+body{margin:0;font-family: Arial, Helvetica, sans-serif;background:linear-gradient(180deg,#ffeeee,#ffffff);color:#222;position:relative;overflow-x:hidden;}
+header{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;background: linear-gradient(135deg, #ff4d4d, #ff1a1a); color:white;}
+header h1{font-size:72px;margin-bottom:20px;}
+header p{font-size:24px;max-width:700px;}
+.btn{padding:18px 40px;background:#ff3333;color:white;border-radius:14px;text-decoration:none;font-size:18px;font-weight:bold;transition:0.3s;display:inline-block;}
+.btn:hover{transform:scale(1.07);background:#ff6666;}
+.btn-subscribe{margin-top:60px;} 
+.section{max-width:1300px;margin:auto;padding:120px 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center;}
+.section.reverse{grid-template-columns:1fr 1.2fr;}
+.section h2{font-size:42px;margin-bottom:25px;}
+.section p{font-size:20px;line-height:1.8;margin-bottom:20px;}
+.section img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.15);}
+.videos-section{padding:120px 40px;background:#ffeaea;}
+.videos-section h2{text-align:center;font-size:42px;margin-bottom:60px;}
+.videos{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+.video-wrapper { position: relative; width: 100%; padding-top: 56.25%; }
+.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 16px; object-fit: cover; border: none; }
+.videos > div:hover { transform: translateY(-5px); transition: 0.3s; }
+.community{text-align:center;padding:120px 40px;}
+.community h2{font-size:42px; display:flex; align-items:center; justify-content:center; gap:10px;}
+.community p{font-size:20px;max-width:800px;margin:auto;margin-top:20px;line-height:1.8;}
+.community ul{list-style:none;padding:0;margin:20px auto;max-width:800px;line-height:1.8;}
+.community ul li::before {content:"✅ "; color:#fff;}
+footer{margin-top:80px;padding:40px;text-align:center;background:#ffeded;font-size:16px;}
+
+/* Fade-in sections */
+.fade-in-section { opacity: 0; transform: translateY(50px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+.fade-in-section.visible { opacity: 1; transform: translateY(0); }
+
+/* Logos slide-in agrandis */
+.logo-slide { opacity: 0; transition: all 1s ease-out; position: absolute; width:120px; height:120px; }
+.logo-slide.left { transform: translateX(-200px); } 
+.logo-slide.right { transform: translateX(200px); } 
+.logo-slide.visible { opacity: 1; transform: translateX(0); }
+
+/* Discord logos section */
+.discord-logos { position: relative; height: 140px; margin-top:40px; display:flex; justify-content:space-between; align-items:center; }
+
+/* Barre d'abonnés */
+#subscriber-bar-container { width:80%; max-width:600px; height:30px; background:#ddd; border-radius:15px; overflow:hidden; margin:auto; }
+#subscriber-bar { width:24.1%; height:100%; background: linear-gradient(90deg, #ff0000, #ff9900); transition: width 1s ease-out; }
+
+/* Petits icônes flottants */
+.floating-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  animation: floatAnimation 6s ease-in-out infinite;
+}
+@keyframes floatAnimation {
+  0% { transform: translateY(0) rotate(0deg); opacity:0; }
+  10% { opacity:1; }
+  50% { transform: translateY(-20px) rotate(180deg); opacity:0.8; }
+  100% { transform: translateY(0) rotate(360deg); opacity:0; }
+}
+
+@media (max-width:900px){
+  header h1{font-size:48px;}
+  .section{grid-template-columns:1fr;padding:80px 25px;}
+  .discord-logos { flex-direction: row; justify-content: center; gap:80px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Nexo</h1>
+<p>Bienvenue sur le site officiel de ma chaîne YouTube. Découvre mes vidéos, mon univers gaming et rejoins la communauté !</p>
+<a class="btn btn-subscribe" href="https://www.youtube.com/@Nexo-h4k" target="_blank">Découvrir la chaîne</a>
+</header>
+
+<section class="section fade-in-section">
+<div>
+<h2>Une chaîne dédiée au gaming</h2>
+<p>La chaîne Nexo est un endroit où je partage ma passion pour les jeux vidéo, le fun et les moments épiques. Chaque vidéo est pensée pour divertir, faire rire et offrir du contenu intéressant à tous ceux qui aiment le gaming.</p>
+<p>Que ce soit des découvertes de jeux, des moments drôles ou des défis, l'objectif est simple : passer un bon moment avec la communauté et créer des vidéos que les abonnés aiment regarder.</p>
+<p>La chaîne continue d'évoluer et de grandir avec de nouveaux projets, de nouvelles idées et toujours plus de contenu.</p>
+</div>
+<img src="https://img.youtube.com/vi/bF_TiFjShdE/hqdefault.jpg" alt="Miniature vidéo gaming" />
+</section>
+
+<section class="section reverse fade-in-section">
+<img src="https://img.youtube.com/vi/hiCc9cDAxG0/hqdefault.jpg" alt="Miniature vidéo récente" />
+<div>
+<h2>Des vidéos fun et régulières</h2>
+<p>Sur la chaîne, tu trouveras des vidéos variées : gameplay, moments drôles, défis ou encore clips mémorables. Chaque vidéo est faite pour apporter quelque chose de différent.</p>
+<p>Le but est de proposer du contenu régulier pour que les abonnés aient toujours quelque chose de nouveau à regarder.</p>
+<p>Si tu aimes découvrir de nouvelles vidéos et suivre l'évolution d'un créateur, alors cette chaîne est faite pour toi.</p>
+</div>
+</section>
+
+<section class="videos-section fade-in-section">
+<h2>Mes vidéos</h2>
+<div class="videos">
+
+<div>
+  <div class="video-wrapper">
+    <iframe loading="lazy" src="https://www.youtube.com/embed/bF_TiFjShdE" title="YouTube video player" allowfullscreen></iframe>
+  </div>
+  <p><strong>Catégorie : 🎮 Gaming</strong></p>
+  <p>Gameplay et moments fun.</p>
+</div>
+
+<div>
+  <div class="video-wrapper">
+    <iframe loading="lazy" src="https://www.youtube.com/embed/HAT_3WoMWVY" title="YouTube video player" allowfullscreen></iframe>
+  </div>
+  <p><strong>Catégorie : 🛠️ Tuto / Astuces</strong></p>
+  <p>Conseils et astuces autour du contenu.</p>
+</div>
+
+<div>
+  <div class="video-wrapper">
+    <iframe loading="lazy" src="https://www.youtube.com/embed/hiCc9cDAxG0" title="YouTube video player" allowfullscreen></iframe>
+  </div>
+  <p><strong>Catégorie : 💥 Nouvelle vidéo</strong></p>
+  <p>Ta dernière vidéo publiée.</p>
+</div>
+
+</div>
+</section>
+
+<section class="community fade-in-section">
+<h2>Rejoins la communauté</h2>
+<p>La chaîne Nexo ne serait rien sans sa communauté. Chaque abonné, chaque commentaire et chaque like aide la chaîne à grandir. Alors si tu apprécies le contenu, pense à t'abonner et à suivre les prochaines vidéos pour ne rien manquer.</p>
+<a class="btn btn-subscribe" href="https://www.youtube.com/@Nexo-h4k" target="_blank">S'abonner à la chaîne</a>
+</section>
+
+<section class="community fade-in-section" style="background:linear-gradient(135deg,#ff1a1a,#ff4d4d);color:white;">
+<h2>Rejoins mon serveur Discord !</h2>
+<p>Si tu aimes la chaîne Nexo et que tu veux aller plus loin, mon serveur Discord est l’endroit parfait pour te connecter avec la communauté.</p>
+
+<p>Sur le serveur, tu pourras :</p>
+<ul>
+  <li>💬 Discuter avec d’autres abonnés et fans de la chaîne.</li>
+  <li>🎮 Participer à des parties en ligne et tournois communautaires.</li>
+  <li>🛠️ Partager des astuces et conseils sur les jeux que tu aimes.</li>
+  <li>📢 Être informé en avant-première des nouvelles vidéos et lives.</li>
+  <li>🎁 Participer à des concours et recevoir des récompenses exclusives.</li>
+</ul>
+
+<div class="discord-logos">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" class="logo-slide left" alt="YouTube" data-delay="0">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" class="logo-slide right" alt="Discord" data-delay="200">
+</div>
+
+<p>Alors, qu’attends-tu ? Clique sur le lien ci-dessous et rejoins la communauté Nexo dès maintenant !</p>
+
+<a class="btn" href="https://discord.gg/um6yNNZnQv" target="_blank" 
+   style="display:inline-flex;align-items:center;gap:10px;">
+   <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord" style="width:24px;height:24px;">
+   Rejoindre le serveur Discord
+</a>
+</section>
+
+<!-- Barre d'abonnés dynamique -->
+<section class="community fade-in-section" style="background:#ffeaea; padding:60px 20px; text-align:center;">
+  <h2>Barre d'abonnés</h2>
+  <p>Nombre d’abonnés : <span id="subscriber-count">241</span>/1000</p>
+
+  <div id="subscriber-bar-container">
+    <div id="subscriber-bar"></div>
+  </div>
+</section>
+
+<footer>© 2026 Nexo — Site officiel de la chaîne YouTube</footer>
+
+<script>
+// Fade-in sections
+var faders = document.querySelectorAll('.fade-in-section');
+var appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+var appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  for(var i=0; i<entries.length; i++){
+    var entry = entries[i];
+    if(!entry.isIntersecting) continue;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  }
+}, appearOptions);
+for(var i=0; i<faders.length; i++){
+  appearOnScroll.observe(faders[i]);
+}
+
+// Slide-in logos
+var logos = document.querySelectorAll('.logo-slide');
+var logoObserver = new IntersectionObserver(function(entries, observer) {
+  for(var i=0; i<entries.length; i++){
+    var entry = entries[i];
+    if(!entry.isIntersecting) continue;
+    var delay = entry.target.getAttribute('data-delay') || 0;
+    setTimeout(function(){ entry.target.classList.add('visible'); }, delay);
+    observer.unobserve(entry.target);
+  }
+}, { threshold:0.2 });
+for(var i=0; i<logos.length; i++){
+  logoObserver.observe(logos[i]);
+}
+
+// Barre d'abonnés dynamique via YouTube API
+const maxSubscribers = 1000;
+let subscriberCount = 241;
+const channelId = "UCXfoYURPMsz4kweh-_3Z_ag";
+const apiKey = "TA_CLE_API_ICI";
+
+function updateBar() {
+  const bar = document.getElementById('subscriber-bar');
+  const count = document.getElementById('subscriber-count');
+  const percent = Math.min((subscriberCount / maxSubscribers) * 100, 100);
+  bar.style.width = percent + '%';
+  count.textContent = subscriberCount;
+}
+
+function fetchSubscriberCount() {
+  fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`)
+    .then(res => res.json())
+    .then(data => {
+      subscriberCount = parseInt(data.items[0].statistics.subscriberCount);
+      updateBar();
+    })
+    .catch(err => console.error("Erreur API YouTube:", err));
+}
+
+updateBar();
+fetchSubscriberCount();
+setInterval(fetchSubscriberCount, 30000);
+
+// Petits icônes flottants
+const iconsSrc = [
+  "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg",
+  "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg",
+  "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/steam.svg"
+];
+
+function spawnFloatingIcon() {
+  const icon = document.createElement('img');
+  icon.src = iconsSrc[Math.floor(Math.random() * iconsSrc.length)];
+  icon.className = 'floating-icon';
+  icon.style.left = Math.random() * 90 + 'vw';
+  icon.style.top = Math.random() * 90 + 'vh';
+  document.body.appendChild(icon);
+  setTimeout(() => icon.remove(), 6000);
+}
+
+// Spawn un icône toutes les 1.5 secondes
+setInterval(spawnFloatingIcon, 1500);
+</script>
+
+</body>
+</html>
